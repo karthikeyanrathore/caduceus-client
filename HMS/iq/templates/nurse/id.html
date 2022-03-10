@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Patient{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<p>Auto Generated Nurse Id: {{ count }}</p>
+<li><a href="{{ url_for('nurse.home') }}">OK</a>
+  
+
+  
+{% endblock %}

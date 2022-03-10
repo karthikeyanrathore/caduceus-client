@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Patient Register{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="name">Name</label>
+    <input name="name" id="name" required>
+
+    <label for="sex">Sex</label>
+    <input name="sex" id="sex" required>
+
+    <label for="address">Address</label>
+    <input name="address" id="address" required>
+
+    <label for="dob">DOB</label>
+    <input name="dob" id="dob" required>
+
+    <label for="Ward_ID">Ward ID</label>
+    <input name="Ward_ID" id="Ward_ID" required>
+
+    <label for="D_ID">Doctor ID</label>
+    <input name="D_ID" id="D_ID">
+
+    <label for="Contact">Contact Number</label>
+    <input name="Contact" id="Contact">
+
+    
+   
+
+    <input type="submit" value="Register">
+  </form>
+{% endblock %}
