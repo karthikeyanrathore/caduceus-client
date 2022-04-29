@@ -1,9 +1,11 @@
 import Navbar from '../components/Navbar';
+import Container from '../components/Container';
 
 const Home = () => {
 	return (
-		<div className="">
+		<div className="h-screen">
 			<Navbar />
+			<Container />
 		</div>
 	);
 };
