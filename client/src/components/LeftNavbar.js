@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const SideNavbar = () => {
+const LeftNavbar = () => {
 	return (
 		<div className="bg-white h-full mt-5 rounded-tr-xl">
 			<div className="p-5 text-lg text-gray-400 font-medium">
@@ -106,4 +106,4 @@ const SideNavbar = () => {
 	);
 };
 
-export default SideNavbar;
+export default LeftNavbar;
