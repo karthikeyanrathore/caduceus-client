@@ -19,3 +19,13 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+.rw-calendar-contained {
+	@apply border-none !important;
+}
+.rw-calendar-btn-left,
+.rw-calendar-btn-today,
+.rw-calendar-btn-right,
+.rw-calendar-btn-view {
+	padding: 0em 0.2em !important;
+}
