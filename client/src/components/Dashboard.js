@@ -1,5 +1,84 @@
-import { useState } from 'react';
-import SideNavbar from './LeftNavbar';
+import {
+	Chart as ChartJS,
+	CategoryScale,
+	LinearScale,
+	BarElement,
+	ArcElement,
+	Title,
+	Tooltip,
+	Legend,
+} from 'chart.js';
+import { Bar, Doughnut } from 'react-chartjs-2';
+import { faker } from '@faker-js/faker';
+
+ChartJS.register(
+	CategoryScale,
+	LinearScale,
+	BarElement,
+	ArcElement,
+	Title,
+	Tooltip,
+	Legend
+);
+
+export const options = {
+	responsive: true,
+	plugins: {
+		legend: {
+			position: 'top',
+		},
+		title: {
+			display: true,
+			text: 'Patient Activity',
+		},
+	},
+};
+
+const labels = [
+	'Jan',
+	'Feb',
+	'Mar',
+	'Apr',
+	'May',
+	'June',
+	'July',
+	'Aug',
+	'Sept',
+];
+
+export const data = {
+	labels,
+	datasets: [
+		{
+			label: '# of Patients',
+			data: labels.map(() => faker.datatype.number({ min: 100, max: 500 })),
+			backgroundColor: 'rgba(6, 182, 212, 0.5)',
+		},
+	],
+};
+
+const labels2 = ['Cardiologist', 'Hepatologist', 'Nephrology'];
+
+export const data2 = {
+	labels: labels2,
+	datasets: [
+		{
+			label: 'Patients By Department',
+			data: labels2.map(() => faker.datatype.number({ min: 100, max: 500 })),
+			backgroundColor: [
+				'rgba(255, 99, 132, 0.2)',
+				'rgba(54, 162, 235, 0.2)',
+				'rgba(255, 206, 86, 0.2)',
+			],
+			borderColor: [
+				'rgba(255, 99, 132, 1)',
+				'rgba(54, 162, 235, 1)',
+				'rgba(255, 206, 86, 1)',
+			],
+			borderWidth: 1,
+		},
+	],
+};
 
 const Dashboard = () => {
 	return (
@@ -53,6 +132,17 @@ const Dashboard = () => {
 						<div className="text-lg font-medium text-gray-400">Total Staff</div>
 						<div className="text-2xl font-bold text-gray-700">250</div>
 					</div>
+				</div>
+			</div>
+			<div className="w-full flex my-8 gap-5">
+				<div className="bg-white p-5 rounded-lg w-4/6">
+					<Bar options={options} data={data} />
+				</div>
+				<div className="bg-white p-5 rounded-lg w-2/6">
+					<div className="text-sm text-center font-bold text-gray-500">
+						Patients By Department
+					</div>
+					<Doughnut data={data2} />
 				</div>
 			</div>
 			<div className="bg-white p-5 rounded-lg">
