@@ -12,9 +12,12 @@ Our solution to this problem will be to deliver a management portal where patien
 
 Tests Included: Heart, Kidney and Liver.
 
+## UI interface
+
+
 
 ## Development
-### Frontend _(react + nextjs + tailwindcss)_:
+### Frontend [react, nextjs, tailwindcss]:
 ```
 # Navigate client dir
 cd client/
@@ -26,14 +29,16 @@ npm install
 npm run dev
 ```
 
-### Backend _(flask + sql)_:
 
-*Unix*
+### Backend [flask, MySQL]
+
+**Unix**
 ```
 chmod +x main.sh
+./main.sh
 ```
 
-*Windows*
+**Windows**
 ```
 # LOCAL env
 python3 -m venv LOCAL
@@ -53,3 +58,12 @@ flask initdb
 # run server
 flask run
 ```
+
+## Deployment
+* AWS cloud service
+
+
+## Authors
+* Manish Sharma
+* Tanuj Sharma
+* Karthikeyan Rathore
