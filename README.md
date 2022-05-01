@@ -1,7 +1,7 @@
 # Advanced Hospital Management System
-> A Hospital Management System where we prioritize patients on the basis of their disease severity
+A Hospital Management System where we prioritize patients on the basis of their disease severity
 
-### Problem Statement
+## Problem Statement
 According to a research in India, the ratio of doctor to patient is 1:1700. The low doctor-to-patient ratio creates complexity in the management of hospitals. 
 As the study shows, the doctors can't offer an adequate amount of time to each patient and can't manage as well as can't predict to give more preference 
 to which patient might be suffering. If a patient is suffering from diseases in multiple organs, the ideal solution for the doctor is to provide a reasonable 
@@ -13,23 +13,43 @@ Our solution to this problem will be to deliver a management portal where patien
 Tests Included: Heart, Kidney and Liver.
 
 
-## Run on your machine locally
+## Development
 ### Frontend _(react + nextjs + tailwindcss)_:
+```
+# Navigate client dir
+cd client/
 
-Navigate to `/client`
+# Install dependencies
+npm install
 
-1. run `npm install` to install dependencies
-2. start up the development client with `npm run dev`
+# run client server
+npm run dev
+```
 
 ### Backend _(flask + sql)_:
-1. Creating a new vitual environment `python3 -m venv LOCAL`
-2. Activating the created virtual environment 
-    1. For macOs `. Local/bin/activate`
-    2. For windows `.\Local\Scripts\activate`
-3. Installing flask `pip3 install flask`
-4. Set FLASK_APP environment variable
-    1. Unix Bash (Linux and Max) `export FLASK_APP=iq`
-    2. Windows CMD `set FLASK_APP=iq`
-    3. $env:FLASK_APP = "iq"
-5. Initializing SQL Database `flask initdb`
-6. Lastly running flask application `flask run`
+
+*Unix*
+```
+chmod +x main.sh
+```
+
+*Windows*
+```
+# LOCAL env
+python3 -m venv LOCAL
+
+# activate env
+.\Local\Scripts\activate
+
+# install flask
+pip3 install flask
+
+# set env variable
+set FLASK_APP=iq or $env:FLASK_APP = "iq"
+
+# clean or init db
+flask initdb
+
+# run server
+flask run
+```
