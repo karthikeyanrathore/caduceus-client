@@ -1,6 +1,8 @@
 # Advanced Hospital Management System
 A Hospital Management System where we prioritize patients on the basis of their disease severity
 
+![demo](https://raw.githubusercontent.com/karthikeyanrathore/caduceus/main/Images/Dashboard.png)
+
 ## Problem Statement
 According to a research in India, the ratio of doctor to patient is 1:1700. The low doctor-to-patient ratio creates complexity in the management of hospitals. 
 As the study shows, the doctors can't offer an adequate amount of time to each patient and can't manage as well as can't predict to give more preference 
