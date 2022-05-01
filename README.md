@@ -12,9 +12,6 @@ Our solution to this problem will be to deliver a management portal where patien
 
 Tests Included: Heart, Kidney and Liver.
 
-## UI interface
-
-
 
 ## Development
 ### Frontend [react, nextjs, tailwindcss]:
