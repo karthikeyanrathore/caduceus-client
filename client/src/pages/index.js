@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="h-screen">
 			<Navbar />
-			<Container />
+			<Container screen="dashboard" />
 		</div>
 	);
 };

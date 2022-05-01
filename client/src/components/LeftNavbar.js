@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const LeftNavbar = () => {
+const LeftNavbar = ({ screen }) => {
 	return (
 		<div className="bg-white h-full mt-5 rounded-tr-xl">
 			<div className="p-5 text-lg text-gray-400 font-medium">
@@ -9,7 +9,9 @@ const LeftNavbar = () => {
 					<div className="flex">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-6 w-6 text-blue-500"
+							className={`h-6 w-6 ${
+								screen === 'dashboard' ? 'text-blue-500' : ''
+							}`}
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -21,12 +23,20 @@ const LeftNavbar = () => {
 								d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
 							/>
 						</svg>
-						<div className="ml-2 text-gray-800">Dashboard</div>
+						<div
+							className={`ml-2 ${
+								screen === 'dashboard' ? 'text-gray-800' : ''
+							}`}
+						>
+							Dashboard
+						</div>
 					</div>
 					<div className="flex">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-6 w-6"
+							className={`h-6 w-6 ${
+								screen === 'appointment' ? 'text-blue-500' : ''
+							}`}
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -38,7 +48,13 @@ const LeftNavbar = () => {
 								d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
 							/>
 						</svg>
-						<div className="ml-2">Appointment</div>
+						<div
+							className={`ml-2 ${
+								screen === 'appointment' ? 'text-gray-800' : ''
+							}`}
+						>
+							Appointment
+						</div>
 					</div>
 					<div className="flex">
 						<svg
