@@ -1,4 +1,4 @@
-# Advanced Hospital Management System
+# caduceus-client (Adv. HMS interface)
 A Hospital Management System where we prioritize patients on the basis of their disease severity
 
 ![demo](https://raw.githubusercontent.com/karthikeyanrathore/caduceus/main/Images/Dashboard.png)
@@ -15,8 +15,8 @@ Our solution to this problem will be to deliver a management portal where patien
 Tests Included: Heart, Kidney and Liver.
 
 
-## Development-client
-### Frontend [react, nextjs, tailwindcss]:
+## development-client
+### frontend [react, nextjs, tailwindcss]:
 ```
 # Navigate client dir
 cd client/
@@ -27,11 +27,6 @@ npm install
 # run client server
 npm run dev
 ```
-
-
-## Deployment
-* AWS cloud service
-
 
 ## Authors
 * Manish Sharma
