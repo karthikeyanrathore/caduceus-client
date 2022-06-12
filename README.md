@@ -15,7 +15,7 @@ Our solution to this problem will be to deliver a management portal where patien
 Tests Included: Heart, Kidney and Liver.
 
 
-## Development
+## Development-client
 ### Frontend [react, nextjs, tailwindcss]:
 ```
 # Navigate client dir
@@ -28,35 +28,6 @@ npm install
 npm run dev
 ```
 
-
-### Backend [flask, MySQL]
-
-**Unix**
-```
-chmod +x main.sh
-./main.sh
-```
-
-**Windows**
-```
-# LOCAL env
-python3 -m venv LOCAL
-
-# activate env
-.\Local\Scripts\activate
-
-# install flask
-pip3 install flask
-
-# set env variable
-set FLASK_APP=iq or $env:FLASK_APP = "iq"
-
-# clean or init db
-flask initdb
-
-# run server
-flask run
-```
 
 ## Deployment
 * AWS cloud service
